@@ -4,6 +4,7 @@
   "description": "Proxy server for individual development work.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +21,7 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mysql": "^2.16.0"
+    "nodemon": "^1.18.10"
   },
   "devDependencies": {
     "morgan": "^1.9.1"
