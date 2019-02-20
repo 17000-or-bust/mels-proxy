@@ -1,5 +1,14 @@
-/* #app {
+#Menu {
+  margin-left: 200px;
+}
+
+#Reservations {
+  background-color: white;
+  position: fixed;
   display: inline-block;
+  top: 256px;
+  left: 865px;
+  z-index: 90;
 }
 
 .sideArrow {
@@ -25,7 +34,7 @@
   height: 30px;
   cursor: default;
 }
-/*
+
 .calendarBox {
   height: 32px;
   display: table-cell;
@@ -52,4 +61,4 @@
   outline-style: solid;
   outline-color: #da3743;
   cursor: pointer;
-} */ */
+}
