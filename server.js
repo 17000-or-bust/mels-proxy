@@ -1,7 +1,9 @@
 let express = require('express');
+let compress = require('compression');
 const port = 8000;
 
 let app = express();
+app.use(compress());
 app.use(express.static(__dirname + '/public'));
 
 let proxy = require('http-proxy-middleware');

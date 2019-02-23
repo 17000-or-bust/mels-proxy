@@ -21,6 +21,7 @@
   "homepage": "https://github.com/table-for-five/proxy-gk#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
     "express": "^4.16.4",
     "http-proxy-middleware": "^0.19.1",
     "nodemon": "^1.18.10"
