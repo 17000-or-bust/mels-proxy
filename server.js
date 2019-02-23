@@ -21,7 +21,10 @@ app.use(
 );
 app.use(
   '/menu',
-  proxy({ target: 'http://localhost:3030', changeOrigin: true })
+  proxy({
+    target: 'http://ec2-3-17-28-103.us-east-2.compute.amazonaws.com/',
+    changeOrigin: true
+  })
 );
 // app.use('/overview', proxy({ target: 'http://localhost:3000', changeOrigin: true }));
 // app.use('/overview', proxy({ target: 'http://localhost:3000', changeOrigin: true }));
@@ -31,6 +34,8 @@ app.use(morgan('dev'));
 let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use('/:id', express.static(__dirname + '/public'));
 
 app.listen(port, () => {
   console.log('Listening on port', port);
