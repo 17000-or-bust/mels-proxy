@@ -4,7 +4,7 @@
 
 #Reservations {
   background-color: white;
-  position: fixed;
+  position: absolute;
   display: inline-block;
   top: 256px;
   left: 865px;
@@ -44,7 +44,7 @@
   border: 1px solid #d8d9db;
   color: #d8d9db;
   width: 34px;
-  font-size: 90%;
+  font-size: 1.1em;
 }
 
 .thisMonth {
@@ -52,7 +52,7 @@
 }
 
 .future {
-  font-size: 700;
+  font-weight: 500;
   color: black;
 }
 
@@ -61,4 +61,9 @@
   outline-style: solid;
   outline-color: #da3743;
   cursor: pointer;
+}
+
+#dateWrap {
+  position: absolute;
+  width: 288px;
 }
