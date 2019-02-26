@@ -1,3 +1,7 @@
+#appWrap {
+  position: relative;
+}
+
 #Menu {
   margin-left: 200px;
 }
@@ -66,4 +70,20 @@
 #dateWrap {
   position: absolute;
   width: 288px;
+}
+
+.ciYhnK {
+  margin-left: 220px;
+}
+
+#Header {
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: -25px;
+}
+
+.cGUdEy {
+  width: 100%;
+  color: red;
 }
