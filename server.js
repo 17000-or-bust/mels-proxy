@@ -28,8 +28,13 @@ app.use(
     changeOrigin: true
   })
 );
-// app.use('/overview', proxy({ target: 'http://localhost:3000', changeOrigin: true }));
-// app.use('/overview', proxy({ target: 'http://localhost:3000', changeOrigin: true }));
+app.use(
+  '/overview',
+  proxy({
+    target: 'http://ec2-18-191-13-163.us-east-2.compute.amazonaws.com/',
+    changeOrigin: true
+  })
+);
 
 let morgan = require('morgan');
 app.use(morgan('dev'));
